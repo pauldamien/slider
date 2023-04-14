@@ -25,16 +25,16 @@ function getDirection(btn) {
 
     sliderData.slideInIndex = slides.findIndex(slide => slide.classList.contains("active"))
 
-
+//fin 
     if (sliderData.slideOutIndex + sliderData.direction >
         slides.length - 1) {
         sliderData.slideInIndex = 0;
     }
-
+//debut
     else if (sliderData.slideOutIndex + sliderData.direction < 0) {
         sliderData.slideInIndex = sliderData.slideOutIndex + sliderData.direction;
     }
-
+//suite  milieur
     else {
         sliderData.slideInIndex = sliderData.slideOutIndex + sliderData.direction;
     }
